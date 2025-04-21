@@ -3,6 +3,7 @@ import { useState } from "react";
 import products from "../../data/products";
 import Link from "next/link";
 import Image from "next/image";
+import { Home } from "lucide-react";
 
 export default function ProductsPage() {
   const [search, setSearch] = useState("");
@@ -12,10 +13,28 @@ export default function ProductsPage() {
   );
 
   return (
-    <main
-      className="p-6 max-w-7xl mx-auto min-h-screen bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/images/bg.jpg')" }}
-    >
+    <main className="p-6 max-w-7xl mx-auto min-h-screen bg-white relative">
+
+      {/* ✅ ปุ่มกลับหน้าแรก (อยู่ใน layout ธรรมดา ) */}
+      <div className="flex justify-between items-center mb-6">
+        {/* กลับหน้าแรก */}
+        <Link
+          href="/"
+          className="inline-flex items-center text-black hover:text-blue-600 font-medium transition"
+        >
+          <Home size={22} className="mr-2" />
+          กลับหน้าแรก
+        </Link>
+
+        {/* ปุ่มติดต่อ */}
+        <Link
+          href="/contact"
+          className="inline-flex items-center text-black hover:text-green-600 font-medium transition"
+        >
+          📞 ติดต่อ
+        </Link>
+      </div>
+
       <h1 className="text-4xl font-bold mb-6 text-black text-center drop-shadow">💻 รายการสินค้า</h1>
       <h2 className="mb-6 text-black text-center">
         ยินดีต้อนรับสู่ร้าน <strong>My Computer Shop</strong> <br />
@@ -47,7 +66,7 @@ export default function ProductsPage() {
                   />
                   <h2 className="text-lg font-semibold text-black">{product.name}</h2>
                   <p className="text-gray-800">{product.price.toLocaleString()} บาท</p>
-                  <p className="text-sm text-gray-600">คงเหลือ: {product.stock} ชิ้น</p> {/* ✅ แสดงจำนวนสินค้า */}
+                  <p className="text-sm text-gray-600">คงเหลือ: {product.stock} ชิ้น</p>
                 </div>
               </div>
             </Link>
