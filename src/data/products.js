@@ -1,0 +1,90 @@
+const products = [
+    {
+      id: 1,
+      name: "Logitech G502 X",
+      price: 2490,
+      image: "/mouse.jpg",
+      description: "เมาส์เกมมิ่งคุณภาพสูง ปรับ DPI ได้สูงสุด 25,600 และมีไฟ RGB ปรับได้",
+      stock: 50,
+    },
+    {
+      id: 2,
+      name: "Razer BlackWidow V3",
+      price: 3990,
+      image: "/keyboard.jpg",
+      stock: 50,
+    },
+    {
+      id: 3,
+      name: "MSI RTX 4060 Ti",
+      price: 13990,
+      image: "/gpu.jpg",
+      stock: 50,
+    },
+    {
+      id: 4,
+      name: "Razer Basilisk V3 Pro Wireless",
+      price: 5490,
+      image: "/mouse1.jpg",
+      stock: 50,
+    },
+    {
+      id: 5,
+      name: "Logitech G305 Lightspeed",
+      price: 1190,
+      image: "/mouse2.jpg",
+      stock: 50,
+    },
+    {
+      id: 6,
+      name: "Razer Viper Mini 8KHZ",
+      price: 1690,
+      image: "/mouse3.jpg",
+      stock: 50,
+    },
+    {
+      id: 7,
+      name: "ZOTAC GAMING GeForce RTX 5060 Ti 16GB Twin Edge",
+      price: 19490,
+      image: "/gpu1.jpg",
+      stock: 50,
+    },
+    {
+      id: 8,
+      name: "ZOTAC GAMING GeForce RTX 5070 Ti SOLID CORE",
+      price: 35900,
+      image: "/gpu2.jpg",
+      stock: 50,
+    },
+    {
+      id: 9,
+      name: "ZOTAC GAMING GeForce RTX 5080 SOLID CORE OC",
+      price: 46900,
+      image: "/gpu3.jpg",
+      stock: 50,
+    },
+    {
+      id: 10,
+      name: "KEYBOARD (คีย์บอร์ด) HyperX ALLOY RISE 75 WIRELESS (TH)",
+      price: 8990,
+      image: "/keyboard1.jpg",
+      stock: 50,
+    },
+    {
+      id: 11,
+      name: "KEYBOARD (คีย์บอร์ด) ASUS ROG AZOTH (WHITE) (BLUE SWITCH) (TH)",
+      price: 6990,
+      image: "/keyboard2.jpg",
+      stock: 50,
+    },
+    {
+      id: 12,
+      name: "KEYBOARD (คีย์บอร์ด) CORSAIR K65 PLUS WIRELESS 75% RGB MECHANICAL GAMING KEYBOARD CALL OF DUTY (EN)",
+      price: 6490,
+      image: "/keyboard3.jpg",
+      stock: 50,
+    },
+  ];
+  
+  export default products;
+  
